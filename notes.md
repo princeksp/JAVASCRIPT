@@ -227,3 +227,44 @@ so the solution are creating a variable name with globalThis.
 
 I. It is the time frame between variable decleration and variable Initialisation . In this time frame we cannot access the variable .
 ii. Variable declared with let and const belongs to TEMPORAL DEAD ZONE(TDZ).
+
+% Function in JS
+% Explicit function with return type
+function sum(a,b)
+{
+const total = a+b;
+return total;
+
+}
+const x = sum(2,3)
+
+# Function Execution Context:--- when we allot a memory in callstack from heap memory to the function are called function execution context.
+
+function greet(user){
+clg(`GM ${user}`)
+}
+const x = greet("raj);
+
+% 2 part
+
+1. variable phase :-
+   user: undefined
+   this:window{}
+   return value: {}
+
+2. Execution Phase
+
+<!-- day-10 Arrow Function  -->
+
+1. Implicit Return Type
+   const greet(user) =>clg(GM ${user})
+   clg return undefined
+2. Explicit return type arrow function
+
+<!-- Higher Order Function -->
+
+The Function which accept another function as a parameter or return a function is known as Higher Order Function.
+
+<!-- CallBack Function -->
+
+The Function which is passed to another function or the function which is returned by another function is known as CallBack Function.
